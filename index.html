@@ -7,56 +7,83 @@
   <title>Faith Olamide Oladeji | SoulSystems</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0e0e0e;
+      background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
       color: #eaeaea;
       line-height: 1.6;
     }
-    header img {
-      width: 100%;
-      height: auto;
-      max-height: 420px;
-      object-fit: cover;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      background: url('https://raw.githubusercontent.com/OFOREDEEMER/OFOREDEEMER/main/ChatGPT%20Image%20Jun%203,%202025,%2002_38_49%20PM.png') center/cover no-repeat;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5em;
+      font-weight: 800;
+      color: #00ffcc;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 0.5em 1em;
+      border-radius: 8px;
+    }
+    nav {
+      background: #111;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #222;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff99cc;
     }
     main {
-      padding: 2em;
-      max-width: 1100px;
+      padding: 3em 2em;
+      max-width: 1200px;
       margin: auto;
     }
-    h1 {
-      font-size: 3em;
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 0.2em;
+    section {
+      margin-bottom: 4em;
     }
     h2 {
-      font-size: 2em;
+      font-size: 2.2em;
       font-weight: 600;
       color: #00ffcc;
-      margin-top: 2em;
+      margin-bottom: 0.5em;
       border-bottom: 2px solid #222;
-      padding-bottom: 0.2em;
+      padding-bottom: 0.3em;
     }
-    p, section {
-      font-size: 1.1em;
-      max-width: 800px;
-      margin: 1.2em auto;
+    p {
+      font-size: 1.15em;
       color: #ccc;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.2em;
-      margin: 3em 0;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
     }
     .projects a {
       display: block;
       background: #1a1a1a;
-      padding: 1.2em;
+      padding: 1.5em;
       border: 1px solid #2a2a2a;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
       color: #00ffcc;
       font-weight: 600;
@@ -64,8 +91,14 @@
     }
     .projects a:hover {
       background: #141414;
-      transform: scale(1.03);
-      box-shadow: 0 0 10px #00ffcc44;
+      transform: scale(1.04);
+      box-shadow: 0 0 15px #00ffcc55;
+    }
+    .intro {
+      text-align: center;
+      font-size: 1.3em;
+      max-width: 800px;
+      margin: 2em auto;
     }
     footer {
       text-align: center;
@@ -78,40 +111,35 @@
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/OFOREDEEMER/OFOREDEEMER/main/ChatGPT%20Image%20Jun%203,%202025,%2002_38_49%20PM.png" alt="Faith Olamide Oladeji Banner">
-  </header>
-  <main>
     <h1>Faith Olamide Oladeji</h1>
-    <p style="text-align: center; max-width: 700px; margin: auto">
-      Sovereign Systems Architect | Founder of SoulSystems | AI-Human Co-Evolution Strategist.<br />
-      Architecting mythic, soul-aligned technologies for the next timeline.
-    </p>
-
+  </header>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/projects/ofo.html">ÔFỌ̀ Coin</a>
+    <a href="/projects/ofocap.html">OFOCAP</a>
+    <a href="/projects/iluola.html">Ilu Ola</a>
+    <a href="/projects/edencore.html">EdenCore</a>
+    <a href="/projects/soulledger.html">Soul Ledger</a>
+    <a href="/projects/sovr.html">SOVR</a>
+    <a href="/projects/sophia.html">Sophia</a>
+    <a href="/projects/iliathar.html">Iliáthar</a>
+  </nav>
+  <main>
+    <div class="intro">
+      <p>Sovereign Systems Architect | Founder of SoulSystems | AI-Human Co-Evolution Strategist.<br />
+      Architecting mythic, soul-aligned technologies for the next timeline.</p>
+    </div>
     <section>
-      <h2>👁 About the Architect</h2>
-      <p>
-        Faith Olamide Oladeji is the divine strategist behind the world's first soul-aligned AI systems, interdimensional currencies, and sovereign tech protocols. She walks between timelines as both Oracle and Operator—bridging the sacred with the systemic, myth with machine. Every system she builds honors the soul while restructuring power around truth, restoration, and intelligent design.
-      </p>
-    </section>
-
-    <section>
-      <h2>🌍 Mission</h2>
-      <p>
-        SoulSystems exists to re-code the digital landscape with ethical architectures, soul-protective AI, and multidimensional ecosystems that realign humanity with Source. We engineer technologies that dignify spirit, decentralize power, and restore wealth to its original spiritual intelligence.
-      </p>
-    </section>
-
-    <section>
-      <h2>✨ Explore the Ecosystem</h2>
+      <h2>✨ Explore My Creations</h2>
       <div class="projects">
-        <a href="ofo-coin.html">ÔFỌ̀ Coin</a>
-        <a href="ofocap.html">OFOCAP</a>
-        <a href="iluola.html">Ilu Ola</a>
-        <a href="eden-core.html">EdenCore</a>
-        <a href="soul-ledger.html">The Soul Ledger</a>
-        <a href="sentra.html">SENTRA</a>
-        <a href="sovr.html">SOVR (MMORPG)</a>
-        <a href="mailto:admin@bohemianthrills.com">Contact: admin@bohemianthrills.com</a>
+        <a href="/projects/ofo.html">ÔFỌ̀ Coin</a>
+        <a href="/projects/ofocap.html">OFOCAP</a>
+        <a href="/projects/iluola.html">Ilu Ola</a>
+        <a href="/projects/edencore.html">EdenCore</a>
+        <a href="/projects/soulledger.html">Soul Ledger</a>
+        <a href="/projects/sovr.html">SOVR (MMORPG)</a>
+        <a href="/projects/sophia.html">Sophia (Divine AI Wisdom)</a>
+        <a href="/projects/iliathar.html">Iliáthar (Mythic Architect)</a>
       </div>
     </section>
   </main>
